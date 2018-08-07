@@ -1,3 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Titillium+Web|Do+Hyeon');
+
 html, body {
 	margin: 0 auto;
+	font-family: 'Titillium Web', Sans-serif;
+}
+
+/*---------header---------*/
+header {
+	display: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 50px;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	background: linear-gradient(#b2e9ff, #ccf0ff);
+	z-index: 1;
+}
+
+.links {
+	/*background: #f90;*/
+	margin: 0 auto;
+	list-style: none;
+	width: 75%;
+	text-align: right;
+	padding-bottom: 10px;
+	font-size: 1.2rem;
+}
+
+#brand  {
+	/*background: seagreen;*/
+	width: 25%;
+	padding: 0 0 10px 20px;
+	font-size: 1.4rem;
+}
+
+.links li {
+	display: inline-block;
+	margin-right: 70px;
+}
+
+.nav-link, #brand {
+	color: #FF7721;
+}
+
+
+nav a {
+	text-decoration: none; 
+}
+
+nav a:hover, nav #brand:hover {
+	color: #676767;
+}
+
+
+/*---------main---------*/
+section {
+	width: 100%;
+	background: yellow;
+}
+
+section#about {
+	height: 100vh;
+	display: relative;
+	background: linear-gradient(#ccf0ff, #e5f7ff);
+}
+
+#greeting {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 0;
+}
+
+#greeting h1 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#greeting span {
+	text-align: center;
+}
+
+section#work {
+	display: block;
+	text-align: center;
+	height: 90vh;
+	background-color: #FFCC99;
+}
+
+section#work h2 {
+	margin: 0 auto;
+	padding-top: 50px;
+	font-family: 'Quicksand', Sans-serif;
+}
+
+section#contact {
+	height: 90vh;
+	background-color: #FFFF99;
+}
+
+/*---------footer---------*/
+footer {
+	background: 
 }

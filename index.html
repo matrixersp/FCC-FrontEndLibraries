@@ -3,11 +3,36 @@
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="./styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header>
-		<h1 id="brand">Portfolio</h1>
+		<nav>
+			<a id="brand" href="#">Portfolio</a>
+			<ul class="links">
+				<li><a class="nav-link" href="#about">About</a></li>
+				<li><a class="nav-link" href="#work">Work</a></li>
+				<li><a class="nav-link" href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 	</header>
+
+	<main>
+		<section id="about">
+			<div id="greeting">
+				<h1>Hi, I'm Mohammed</h1>
+				<span>a full stack web developer</span>
+			</div>
+		</section>
+		<section id="work">
+			<h2>Some of my projects</h2>
+		</section>
+		<section id="contact">write soemthing here!</section>
+	</main>
+
+	<footer>
+		<span>Copyright &copy; 2018</span>
+	</footer>
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
