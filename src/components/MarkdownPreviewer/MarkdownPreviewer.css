@@ -1,0 +1,78 @@
+.MarkdownPreviewer,
+.MarkdownPreviewer * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.MarkdownPreviewer {
+  color: #121212;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.MarkdownPreviewer .container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  margin: 24px 18px 12px;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+.MarkdownPreviewer .container .header {
+  width: 100%;
+  border: 1px solid #aaa;
+  background-color: #ff9800;
+  display: flex;
+  justify-content: space-between;
+  min-height: max-content;
+  align-items: center;
+  padding: 4px 15px;
+}
+
+.MarkdownPreviewer h1 {
+  font-size: 22px;
+}
+
+.MarkdownPreviewer .resize {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.MarkdownPreviewer textarea {
+  resize: none;
+  color: #121212;
+  font-size: 16px;
+}
+
+.MarkdownPreviewer .editor,
+.MarkdownPreviewer .previewer {
+  border: 1px solid #aaa;
+  border-top: 2px solid #d5bfbf;
+  flex: 1 1 100%;
+  padding: 10px;
+}
+
+.MarkdownPreviewer .previewer {
+  overflow: auto;
+  background-color: #fff1dd;
+}
+
+.MarkdownPreviewer .previewer * {
+  margin: inherit;
+  padding: inherit;
+  box-sizing: inherit;
+}
+
+.MarkdownPreviewer .previewer li {
+  width: default;
+  height: unset;
+  box-sizing: content-box;
+}
+
+@media (max-width: 990px) {
+  .MarkdownPreviewer {
+    flex-direction: column;
+  }
+}

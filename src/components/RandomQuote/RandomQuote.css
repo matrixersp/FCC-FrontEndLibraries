@@ -1,0 +1,143 @@
+/* ------------------------------ */
+/* GENERAL STYLES */
+/* ------------------------------ */
+:root {
+  --loader-line-color-one: #656d6f;
+  --loader-line-color-two: #757d7f;
+  --loader-box-shadow-color: #7d858f;
+}
+
+/* ------------------------------ */
+/* QUOTE STYLES */
+/* ------------------------------ */
+
+.RandomQuote,
+.RandomQuote * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.RandomQuote {
+  max-width: 600px;
+  padding: 20px 30px 40px;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+  background-color: #00adb5;
+  color: #ece8d9;
+  margin: 15vh auto 30px;
+}
+
+.RandomQuote .quote {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 10px;
+}
+
+.RandomQuote .quote #text {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+  align-self: center;
+}
+
+.RandomQuote .quote .opening-quote:before {
+  font-family: 'Segoe UI', sans-serif;
+  content: open-quote;
+  display: block;
+  font-size: 200px;
+  float: left;
+  padding: 0 20px 0 10px;
+  margin-bottom: -95px;
+  line-height: 1;
+}
+
+.RandomQuote #author {
+  float: right;
+}
+
+/* ------------------------------ */
+/* BUTTONS STYLES */
+/* ------------------------------ */
+.RandomQuote .btn-group {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.RandomQuote .btn-group .btn {
+  border-radius: 4px;
+  background-color: #393e46;
+  color: #ece8d9;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  padding: 10px 12px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.RandomQuote .btn-group .btn:hover {
+  background-color: #494e56;
+}
+
+.RandomQuote .social #tumblr-quote {
+  margin-left: 6px;
+}
+
+/* ------------------------------ */
+/* LOADER STYLES */
+/* ------------------------------ */
+.RandomQuote .loader .line {
+  height: 30px;
+  background: var(--loader-line-color-one);
+  opacity: 0.3;
+  box-shadow: 0 0 3px 1px var(--loader-box-shadow-color);
+  border-radius: 4px;
+  animation-name: loading-quote;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  margin: 20px 0;
+}
+
+.RandomQuote .loader .first-line {
+  width: 100%;
+}
+.RandomQuote .loader .second-line {
+  width: 75%;
+}
+.RandomQuote .loader .third-line {
+  width: 50%;
+}
+
+@keyframes loading-quote {
+  100% {
+    background: var(--loader-line-color-two);
+  }
+}
+
+@media (max-width: 600px) {
+  .RandomQuote .quote .opening-quote:before {
+    content: '';
+    padding: 0;
+  }
+}
+
+/* ------------------------------ */
+/* CREATOR STYLES */
+/* ------------------------------ */
+.creator {
+  text-align: center;
+  font-size: 14px;
+  color: #393e46;
+  margin-bottom: 10vh;
+}
+
+.creator a {
+  text-decoration: none;
+  color: #00adb5;
+}
