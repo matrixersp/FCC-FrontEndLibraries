@@ -13,6 +13,7 @@ class Calculator extends Component {
   handleNumber = e => {
     const number = e.target.innerHTML;
     let { history, operation, current } = this.state;
+    if (current === '0' && number === '0') return;
     if (operation === '=') {
       this.setState({
         history: number,
@@ -87,8 +88,8 @@ class Calculator extends Component {
 
   handleDecimal = e => {
     let { current, history } = this.state;
-    history =
-      current && current.indexOf('.') === -1 ? history + '.' : history + '0.';
+    if (current.indexOf('.') !== -1) return;
+    history = current && current.indexOf('.') === -1 ? history + '.' : history;
     current = current && current.indexOf('.') === -1 ? current + '.' : '0.';
     this.setState({ current, history });
   };
@@ -134,9 +135,9 @@ class Calculator extends Component {
     const { history, current, result } = this.state;
     return (
       <div className="Calculator">
-        <div id="display">
+        <div class="display-container">
           <div>{history}</div>
-          <div>{current || result}</div>
+          <div id="display">{current || result}</div>
         </div>
         <div className="buttons-container">
           <button id="clear" className="btn wide" onClick={this.handleClear}>
@@ -160,7 +161,10 @@ class Calculator extends Component {
           <button id="nine" onClick={this.handleNumber}>
             9
           </button>
-          <button id="add" className="right" onClick={this.handleOperation}>
+          <button
+            id="subtract"
+            className="right"
+            onClick={this.handleOperation}>
             -
           </button>
           <button id="four" onClick={this.handleNumber}>
@@ -172,10 +176,7 @@ class Calculator extends Component {
           <button id="six" onClick={this.handleNumber}>
             6
           </button>
-          <button
-            id="substruct"
-            className="right"
-            onClick={this.handleOperation}>
+          <button id="add" className="right" onClick={this.handleOperation}>
             +
           </button>
           <button id="one" onClick={this.handleNumber}>

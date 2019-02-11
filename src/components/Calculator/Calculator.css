@@ -9,14 +9,14 @@
   box-shadow: 0 1px 6px 1px #222;
 }
 
-.Calculator #display {
+.Calculator .display-container {
   width: 100%;
   color: #fff;
   height: 80px;
   overflow: hidden;
 }
 
-.Calculator #display div {
+.Calculator .display-container div {
   font-size: 28px;
   text-align: right;
   height: 50%;
