@@ -5,6 +5,7 @@ import RandomQuote from './RandomQuote/RandomQuote';
 import MarkdownPreviewer from './MarkdownPreviewer/MarkdownPreviewer';
 import DrumMachine from './DrumMachine/DrumMachine';
 import Calculator from './Calculator/Calculator';
+import PomodoroClock from './PomodoroClock/PomodoroClock';
 
 import Sidebar from '../shared/Sidebar';
 
@@ -18,6 +19,7 @@ class App extends Component {
           <Route path="/markdown-previewer" component={MarkdownPreviewer} />
           <Route path="/drum-machine" component={DrumMachine} />
           <Route path="/calculator" component={Calculator} />
+          <Route path="/pomodoro-clock" component={PomodoroClock} />
         </div>
       </Router>
     );

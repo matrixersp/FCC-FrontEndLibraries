@@ -9,3 +9,5 @@
 3. [Drum Machine](https://github.com/matrixersp/FreeCodeCamp/tree/master/src/components/DrumMachine) | [codepen](https://codepen.io/matrixersp/pen/PVjxdB)
 
 4. [Calculator](https://github.com/matrixersp/FreeCodeCamp/tree/master/src/components/Calculator) | [codepen](https://codepen.io/matrixersp/pen/EwoEKK)
+
+5. [Pomodoro Clock](https://github.com/matrixersp/FreeCodeCamp/tree/master/src/components/PomodoroClock) | [codepen](https://codepen.io/matrixersp/pen/WPgyNx)
